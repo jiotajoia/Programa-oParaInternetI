@@ -30,6 +30,7 @@ async function MostraOcorrencias(url, word) {
 
 const url = 'https://www.adorocinema.com/'; 
 const word = 'filme';
+
 MostraOcorrencias(url, word)
     .then(occurrences => {
         if (occurrences) {
