@@ -15,8 +15,8 @@ async function MostraOcorrencias(url, word) {
         let occurrences = [];
 
         while ((match = regex.exec(pageText)) !== null) {
-            const startIndex = Math.max(0, match.index - 10);
-            const endIndex = Math.min(pageText.length, match.index + match[0].length + 10);
+            const startIndex = Math.max(0, match.index - 20); //conta os caracteres antes
+            const endIndex = Math.min(pageText.length, match.index + match[0].length + 20); //aqui os depois
 
             occurrences.push(pageText.substring(startIndex, endIndex));
         }
@@ -28,17 +28,15 @@ async function MostraOcorrencias(url, word) {
     }
 }
 
-const url = 'https://www.adorocinema.com/'; 
-const word = 'filme';
+const url = 'https://pt.wikipedia.org/wiki/Twice';
+const word = 'Momo';
 
 MostraOcorrencias(url, word)
     .then(occurrences => {
-        if (occurrences) {
-            console.log(`Ocorrências da palavra "${word}" na página: `);
-            occurrences.forEach((occurrence, index) => {
-                console.log(`Ocorrência ${index + 1} :`);
-                console.log(occurrence);
-            });
-        }
+        console.log(`ocorrências para '${word}'`);
+        occurrences.forEach((c, index) => {
+            console.log(`Ocorrência ${index + 1}: `)
+            console.log(c);
+        });
     })
     .catch(error => console.error('Erro ao realizar o parse da página:', error));
