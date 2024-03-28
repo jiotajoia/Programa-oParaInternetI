@@ -44,11 +44,14 @@ Funcionalidades:
 
         if(funcionalidade == 1){
             await buscador();
+            console.clear();
         }else if(funcionalidade == 2){
             painelDeControle();
+            console.clear();
         }
     }
 
+    console.clear();
     console.log("Fechando Buscador Joia...");
 }
 
@@ -191,7 +194,6 @@ function ranquearSites(sites: Site[]): void{
         }
     }
 
-    let sitesExibiveis1: Site[] =  sitesExibiveis;
 
     let sitesOrdenados: Site[] =  sitesExibiveis.sort((a, b) => {
         if(b.pontuacaoFinal == a.pontuacaoFinal){  //desempate
@@ -289,7 +291,7 @@ async function minerarLink(Url:string, termoBuscado: string, links: string[]){//
         if(diferençaDeAnos == 0){
             siteAtual.pntsFrescor = 30;
         }else if(diferençaDeAnos > 0){
-            siteAtual.pntsFrescor = diferençaDeAnos * penalidadeFrescor;
+            siteAtual.pntsFrescor = 30 + diferençaDeAnos * penalidadeFrescor;
         }
 
         if(contadorTermos > 0 || contadorTermosMeta > 0 || contadorTermosTitle > 0){
