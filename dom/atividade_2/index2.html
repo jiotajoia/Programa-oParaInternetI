@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js"></script>
+</head>
+
+<body>
+
+    <div id="erro"></div>
+
+    <h1>Mover Ativos Financeiros entre Carteiras</h1>
+    <div class="container">
+        <div id="div1">
+            <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+            <select id="ativosDisponiveis" size="10" multiple>
+                <option value="AAPL">Apple (AAPL)</option>
+                <option value="GOOGL">Google (GOOGL)</option>
+                <option value="AMZN">Amazon (AMZN)</option>
+                <option value="MSFT">Microsoft (MSFT)</option>
+                <option value="TSLA">Tesla (TSLA)</option>
+                <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+                <option value="FB">Meta (FB)</option>
+                <option value="V">Visa (V)</option>
+                <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                <option value="WMT">Walmart (WMT)</option>
+            </select>
+        </div>
+        <div id="div2">
+            <label for="carteiraInvestimentos">Carteira de
+                Investimentos:</label>
+            <select id="carteiraInvestimentos" size="10" multiple></select>
+        </div>
+
+        <div class="buttons">
+            <button id="moverParaDireitaBtn">mover para carteira</button>
+            <button id="moverParaEsquerdaBtn">mover para ativos</button>
+        </div>
+    </div>
+</body>
+
+</html>
