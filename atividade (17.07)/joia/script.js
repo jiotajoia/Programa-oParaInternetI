@@ -1,23 +1,31 @@
+// // selecione o botão usando o método getElementById
+// var botao = document.getElementById("botao");
+
+// //adicione um evento de clique ao botão
+// botao.addEventListener("click", function(){
+//     //selecione o paragrafo usando o metodo getElementById
+//     var paragrafo = document.getElementById("paragrafo");
+
+//     //altere o texto do paragrafo
+//     paragrafo.textContent = "O texto desse parágrafo foi alterado!";
+// });
+
 document.addEventListener('DOMContentLoaded', function(){
 
-    var p1 = document.getElementById('texto');
-    p1.innerHTML = 'Hello world';
+    document.getElementById('botao').addEventListener('click',alteraTexto)
+    document.getElementById('btn_limpar').addEventListener('click',limpaParagrafo)
 
-    document.getElementById('btnHello').addEventListener('click', helloworld);
-    document.getElementById('btnCopiar').addEventListener('click', copiar);
-    document.getElementById('btnMudarCor').addEventListener('click', mudarCor);
 });
 
-function helloworld(){
-    alert('Joiar')
+function alteraTexto(){
+    var paragrafo = document.getElementById("paragrafo");
+
+    paragrafo.textContent = "O texto desse parágrafo foi alterado!"
 }
 
-function copiar(){
-    let texto = document.getElementById('caixaTexto').value;
-    document.getElementById('resultado2').innerHTML += texto + '<br>';
+function limpaParagrafo(){
+    var paragrafo = document.getElementById("paragrafo");
+
+    paragrafo.textContent = ""
 }
 
-function mudarCor(){
-    let cor = document.getElementById('inputCor').value;
-    document.body.style.backgroundColor = cor;
-}
