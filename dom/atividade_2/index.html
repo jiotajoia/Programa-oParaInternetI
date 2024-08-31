@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="botaoErro">Mostrar Erro</button>
+
+    <label for="caixaDeTexto">Digite o texto:</label>
+    <input type="text" id="caixaDeTexto">
+    <button id="botaoExibir">Exibir</button>
+    <div id="conteudo"></div>
+
+    <div id="mensagemErro" class="oculto">O campo deve ser preenchido</div>
+    <div id="mensagemErro2" class="oculto">O campo deve ser preenchido</div>
+
+
+    <h1>ÁREA REDE SOCIAL</h1>
+
+    <label for="interacoes"> Número de interações</label>
+    <input type="text" id="interacoes">
+    <label for="visualizacoes"> Número de visualizações</label>
+    <input type="text" id="visualizacoes">
+
+    <button id="calcularEng">calcular</button>
+    <div id="resultadoEng"></div>
+    <div id="erroSocial" class="oculto">O campo deve ser preenchido</div>
+
+    <h1>AREA IMAGEM</h1>
+
+    <input type="file" id="imagem" accept="image/*">
+
+    <button id="botaoImg">carregar</button>
+
+    <div id="resultadoImg"></div>
+    <br>
+    <br>
+    <br>
+    <select id="fotos">
+        <option value="momo.jpeg" id="momo">imagem momo</option>
+        <option value="haerin.jpg" id="haerin">imagem haerin</option>
+        <option value="rosé.jpeg" id="rose">imagem rosé</option>
+    </select>
+
+    <div id="imgTop"></div>
+
+    <h1>Rede Sociais</h1>
+    <div>
+        <input type="checkbox" id="facebook" name="redesSociais" value="Facebook">
+        <label for="facebook">Facebook</label>
+    </div>
+    <div>
+
+        <input type="checkbox" id="twitter" name="redesSociais" value="Twitter">
+        <label for="twitter">Twitter</label>
+    </div>
+    <div>
+        <input type="checkbox" id="instagram" name="redesSociais" value="Instagram">
+        <label for="instagram">Instagram</label>
+    </div>
+    <div>
+        <input type="checkbox" id="linkedin" name="redesSociais" value="LinkedIn">
+        <label for="linkedin">LinkedIn</label>
+    </div>
+    <div>
+        <input type="checkbox" id="tiktok" name="redesSociais" value="TikTok">
+        <label for="tiktok">TikTok</label>
+    </div>
+    <div class="oculto" id="mensagemErro"></div>
+    <button type="button" id="enviarBtn">Enviar Seleção</button>
+    <div id="redesSelecionadas"></div>
+
+    <h1>Hashtags</h1>
+    <input id="hashtag" type="text" placeholder="escreva a hashtag :D">
+
+    <button id="btnCriaSelect" type="submit">Enviar Hashtag</button>
+    <select id="hashtags" size="5"></select>
+
+    <div id="erro"></div>
+
+</body>
+
+</html>
