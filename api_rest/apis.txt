@@ -1,0 +1,8 @@
+Nabubit (https://nabubit.com/?ref=producthunt)
+- Criada para ajudar a entender diagramas de banco de dados já criados,
+permite que sejam feitas perguntas sobre para melhor entendimento.
+
+VLibras (https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/vlibras)
+- Basicamente traduz texto em português brasileiro para libras e vice e versa.
+
+OpenAI(https://platform.openai.com/docs/overview)
