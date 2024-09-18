@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de APIs</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Blog de APIs</h1>
+        <p>Explore diferentes APIs através deste blog interativo.</p>
+    </header>
+    
+    <main>
+        <!-- Seção da API de Conselhos -->
+        <section class="blog-post">
+            <h2>Obter um Conselho Aleatório</h2>
+            <button id="obter-conselho">Obter Conselho</button>
+            <p id="conselho-saida"></p>
+        </section>
+        
+        <!-- Seção da API de Imagem de Cachorro -->
+        <section class="blog-post">
+            <h2>Obter uma Imagem Aleatória de Cachorro</h2>
+            <button id="obter-imagem-cachorro">Obter Imagem de Cachorro</button>
+            <img id="imagem-cachorro" alt="Imagem de Cachorro Aleatório" style="display:none;">
+        </section>
+        
+        <!-- Seção da API de Imagem da NASA -->
+        <section class="blog-post">
+            <h2>Obter Imagem do Dia da NASA</h2>
+            <button id="obter-imagem-nasa">Obter Imagem da NASA</button>
+            <img id="imagem-nasa" alt="Imagem do Dia da NASA" style="display:none;">
+            <p id="descricao-nasa"></p>
+        </section>
+        
+        <!-- Seção da API de Bandeira do País -->
+        <section class="blog-post">
+            <h2>Obter Bandeira de um País</h2>
+            <input type="text" id="nome-pais" placeholder="Digite o nome do país">
+            <button id="obter-bandeira">Obter Bandeira</button>
+            <img id="imagem-bandeira" alt="Bandeira do País" style="display:none;">
+            <p id="nome-nativo"></p>
+            <p id="erro-bandeira"></p>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
